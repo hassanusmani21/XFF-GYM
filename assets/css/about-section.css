@@ -1,0 +1,27 @@
+.fa-brands{
+    font-size: 30px;
+    color: white;
+    margin-left:10px;
+}
+
+.fa-brands:hover{
+    color: red;
+
+}
+
+.containers{
+   margin: 100px 100px;
+   overflow: hidden;
+}
+
+.about-2{
+    margin-top: 50px;
+}
+
+.male-timig{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid white; */
+    width: 80%;
+    /* margin: 20px 20px; */
+}
