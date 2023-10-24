@@ -28,11 +28,51 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/galary.css">
     <link rel="stylesheet" href="assets/css/about-section.css">
+    <link rel="stylesheet" href="./assets/css/table.css">
 </head>
 <style>
  html {
     scroll-behavior: smooth;
 }
+
+@media (max-width: 768px) {
+        .single-slider {
+            /* Reset the display style to stack content vertically */
+            /* display: block; */
+            display: flex;
+        }
+        .hero__caption {
+            /* Adjust text alignment for better centering */
+            text-align: center;
+            position: relative;
+            right: 20%;
+        
+        }
+    }
+
+    .ul-heading{
+        font-size:22px;
+        color: white;
+        background-color: red;
+        /* width: 100%; */
+        margin-bottom: 5px;
+    }
+
+
+    .ul-heading2{
+        font-size:22px;
+        color: white;
+        background-color: red;
+    }
+
+    .address-logo span{
+        margin-right:10px;
+    }
+
+
+    
+
+
 
 </style>
 <body class="black-bg">
@@ -73,7 +113,7 @@
                         </div>          
                         <!-- Header-btn -->
                         <div class="header-btns d-none d-lg-block f-right">
-                           <a><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                           <a target="_blank" href="https://www.instagram.com/xff_gym/?igshid=ZDdkNTZiNTM%3D"><i class="fa-brands fa-instagram fa-2xl"></i></a>
                            <a><i class="fa-brands fa-facebook fa-2xl"></i></a>
                            <a><i class="fa-brands fa-twitter fa-2xl"></i></a>
                        </div>
@@ -286,7 +326,6 @@
     </section>
     <!-- Trainer Section End -->
     
-    
     <div class="image-gallery" id="galary">
         <div class="row">
             <div class="col-xl-12">
@@ -339,170 +378,97 @@
 
     <!-- Time Table Start-->
 
-    <section class="pricing-area section-padding40 fix"  id="timing">
+    <section class="pricing-area section-padding40 fix text-center" id="timing">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
-                    <div class="section-tittle text-center mb-55 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".1s">
+                    <div class="section-tittle mb-55 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".1s">
                         <h2>Time Table</h2>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6">
+                <!-- Card 1 -->
+                <div class="col-lg-4 col-md-6 col-sm-6 mx-auto"> <!-- Add mx-auto here -->
                     <div class="properties mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
                         <div class="properties__card">
                             <div class="about-icon">
-                                <!-- <img src="assets/img/icon/price.svg" alt="" -->
-                                <span><i class="fa-solid fa-person-dress fa-2xl" style="font-size:50px;"></i></span>
+                                <span><i class="fa-solid fa-dumbbell fa-2xl" style="font-size: 50px;"></i></span>
                             </div>
                             <div class="properties__caption">
-                                <span class="month">Female</span>
-                                <!-- <p class="mb-25">$30/m  <span>(Single class)</span></p> -->
-                                <div class="single-features">
-                                    <div class="features-icon">
-                                        <!-- <img src="assets/img/icon/check.svg" alt=""> -->
-                                        <span><i class="fa-regular fa-clock fa-2xl" style="color: white;"></i></span>
-                                    </div>
-                                    <div class="features-caption male-timig">
-                                        <p>Free riding:</p>
-                                        <p>7pm</p>
-                                    </div>
-                                </div>
-                                <div class="single-features">
-                                    <div class="features-icon">
-                                        <!-- <img src="assets/img/icon/check.svg" alt=""> -->
-                                        <span><i class="fa-regular fa-clock fa-2xl" style="color: white;"></i></span>
-                                    </div>
+                                <span class="month">GYM</span>
+                                <ul class="ul-heading">
+                                   <li>female for separate timing</li>
+                                </ul>
 
-                                    <div class="features-caption male-timig">
-                                        <p>Free riding:</p>
-                                        <p>7pm</p>
-                                    </div>
-
-                                </div>
+                                <ul class="ul-heading2">
+                                    <li>With Female Trainer</li>
+                                 </ul>
                                 <div class="single-features">
                                     <div class="features-icon">
-                                        <!-- <img src="assets/img/icon/check.svg" alt=""> -->
                                         <span><i class="fa-regular fa-clock fa-2xl" style="color: white;"></i></span>
                                     </div>
-                                    <div class="features-caption male-timig">
-                                        <p>Free riding:</p>
-                                        <p>7pm</p>
+                                    <div class="features-caption male-timing">
+                                        <p>Male:</p>
+                                        <p>1 to 11:45 Am</p>
                                     </div>
                                 </div>
-                                <!-- <div class="single-features">
+
+
+                                <div class="single-features">
                                     <div class="features-icon">
-                                        <img src="assets/img/icon/check.svg" alt="">
+                                        <span><i class="fa-regular fa-clock fa-2xl" style="color: white;"></i></span>
                                     </div>
-                                    <div class="features-caption">
-                                        <p>Weight losing classes</p>
+                                    <div class="features-caption male-timing">
+                                        <p>Female:</p>
+                                        <p>1 to 4.OO Pm</p>
                                     </div>
-                                </div> -->
-                                <!-- <div class="single-features mb-20">
-                                    <div class="features-icon">
-                                        <img src="assets/img/icon/check.svg" alt="">
-                                    </div>
-                                    <div class="features-caption">
-                                        <p>Month to mouth</p>
-                                    </div>
-                                </div> -->
-                                <!-- <a href="#" class="border-btn border-btn2">Join Now</a> -->
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="properties mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+    
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-md-6 col-sm-6 mx-auto"> <!-- Add mx-auto here -->
+                    <div class="properties mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
                         <div class="properties__card">
                             <div class="about-icon">
-                                <!-- <img src="assets/img/icon/price.svg" alt="" -->
-                                <span><i class="fa-solid fa-person fa-2xl" style="font-size:50px;"></i></span>
+                                <span><img src="./assets/img/gallery2/mma_fight-removebg-preview.png" alt=""></span>
                             </div>
-                            <div class="properties__caption">
-                                <span class="month">Male</span>
-                                <!-- <p class="mb-25">$30/m  <span>(Single class)</span></p> -->
-                                <div class="single-features">
-                                    <div class="features-icon">
-                                        <!-- <img src="assets/img/icon/check.svg" alt=""> -->
-                                        <span><i class="fa-regular fa-clock fa-2xl" style="color: white;"></i></span>
-                                    </div>
-                                    <div class="features-caption male-timig">
-                                        <p>Free riding:</p>
-                                        <p>7pm</p>
-                                    </div>
-                                </div>
-                                <div class="single-features">
-                                    <div class="features-icon">
-                                        <!-- <img src="assets/img/icon/check.svg" alt=""> -->
-                                        <span><i class="fa-regular fa-clock fa-2xl" style="color: white;"></i></span>
-                                    </div>
-
-                                    <div class="features-caption male-timig">
-                                        <p>Free riding:</p>
-                                        <p>7pm</p>
-                                    </div>
-
-                                </div>
-                                <div class="single-features">
-                                    <div class="features-icon">
-                                        <!-- <img src="assets/img/icon/check.svg" alt=""> -->
-                                        <span><i class="fa-regular fa-clock fa-2xl" style="color: white;"></i></span>
-                                    </div>
-                                    <div class="features-caption male-timig">
-                                        <p>Free riding:</p>
-                                        <p>7pm</p>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="properties mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
-                        <div class="properties__card">
-                            <div class="about-icon">
-                                <!-- <img src="assets/img/icon/price.svg" alt="" -->
-                                <span><i class="fa-solid fa-dumbbell fa-2xl" style="font-size:50px;"></i></span>
-                            </div>
+                    
                             <div class="properties__caption">
                                 <span class="month">MMA</span>
-                                <!-- <p class="mb-25">$30/m  <span>(Single class)</span></p> -->
+                                <ul class="ul-heading">
+                                    <li>female for separate timing</li>
+                                 </ul>
+ 
+                                 <ul class="ul-heading2">
+                                     <li>With Female Trainer</li>
+                                  </ul>
+
                                 <div class="single-features">
                                     <div class="features-icon">
-                                        <!-- <img src="assets/img/icon/check.svg" alt=""> -->
-                                        <span><i class="fa-regular fa-clock fa-2xl" style="color: white;"></i></span>
-                                    </div>
-                                    <div class="features-caption male-timig">
-                                        <p>Free riding:</p>
-                                        <p>7pm</p>
-                                    </div>
-                                </div>
-                                <div class="single-features">
-                                    <div class="features-icon">
-                                        <!-- <img src="assets/img/icon/check.svg" alt=""> -->
                                         <span><i class="fa-regular fa-clock fa-2xl" style="color: white;"></i></span>
                                     </div>
 
-                                    <div class="features-caption male-timig">
-                                        <p>Free riding:</p>
-                                        <p>7pm</p>
+                                    <div class="features-caption male-timing table">
+                                        <p>Male:</p>
+                                        <p>1 to 11:45</p>
                                     </div>
-
                                 </div>
+
                                 <div class="single-features">
                                     <div class="features-icon">
-                                        <!-- <img src="assets/img/icon/check.svg" alt=""> -->
                                         <span><i class="fa-regular fa-clock fa-2xl" style="color: white;"></i></span>
                                     </div>
-                                    <div class="features-caption male-timig">
-                                        <p>Free riding:</p>
-                                        <p>7pm</p>
+
+                                    <div class="features-caption male-timing table">
+                                        <p>Male:</p>
+                                        <p>1 to 11:45</p>
                                     </div>
                                 </div>
-                        
-                                <!-- <a href="#" class="border-btn border-btn2">Join Now</a> -->
+
                             </div>
                         </div>
                     </div>
@@ -510,6 +476,10 @@
             </div>
         </div>
     </section>
+    
+    
+    
+
 
     
     <!--? video_start -->
@@ -522,72 +492,48 @@
             </div>
         </div>
     </div>
-
-
-     
-
-
     <!-- video_end -->
-    <!-- ? services-area -->
-    <section class="services-area" id="contact"> 
-        <h1 style="color: white;">Contact Information</h1>
-        <div class="containers">
-            <!-- <div class="row justify-content-between">
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
-                    <div class="single-services mb-40 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
-                        <div class="features-icon">
-                            <img src="assets/img/icon/icon1.svg" alt="">
-                        </div>
-                        <div class="features-caption">
-                            <h3>Location</h3>
-                            <p>XFF GYM 149/151, LEHRI MANSION, DUNCAN ROAD, NEAR AKRAM NIRBAN'S BISMILLAH CASTLE,  MUMBAI 400008.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
-                    <div class="single-services mb-40 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
-                        <div class="features-icon">
-                            <img src="assets/img/icon/icon2.svg" alt="">
-                        </div>
-                        <div class="features-caption">
-                            <h3>Phone</h3>
-                            <p>8433605511</p>
-                            <p>8433615511</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
-                    <div class="single-services mb-40 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".4s">
-                        <div class="features-icon">
-                            <img src="assets/img/icon/icon3.svg" alt="">
-                        </div>
-                        <div class="features-caption">
-                            <h3>Email</h3>
-                            <p>jacson767@gmail.com</p>
-                            <p>contact56@zacsion.com</p>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-        
-                <div class="row contact-row">
-                    <!-- <h1>Contact Information</h1> -->
-                    <div class="col-md-4 " >
-                        <h1 class="text-white">Address:</h1>
-                        <p style="color: white;">XFF GYM 149/151, LEHRI MANSION, DUNCAN ROAD, NEAR AKRAM NIRBAN'S BISMILLAH CASTLE,  MUMBAI 400008.</p>
-                    </div >
-                    <div class="col-md-4">
-                        <h1 class="text-white">Email:</h1>
-                             <p style="color: white; font-size: 20px;">conatct@gmail.com</p>
-                    </div>
-                    <div class="col-md-4">
-                        <h1 class="text-white">Contact Number:</h1>
-                        <p style="color: white; font-size: 20px;">8433605511 / 8433615511</p>
-                    </div>
+
+
+    <!-- Contact section Start -->
+    
+    <section class="services-area" id="contact">
+        <h1 class="text-center mb-50" style="color: white;">Contact Information</h1>
+        <div class="container">
+            <div class="row contact-row">
+                <div class="col-lg-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.252840031336!2d72.8288543!3d18.9644379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce14efbd147f%3A0xd39c6da8336c311a!2sXFF%20GYM!5e0!3m2!1sen!2sin!4v1698063964635!5m2!1sen!2sin"
+                        width="100%" height="300" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
 
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="text-white text-center text-lg-left address-logo"><span><i class="fa-solid fa-location-dot"></i></span>Address:</h1>
+                            <p class="text-center text-lg-left" style="color: white;">XFF GYM 149/151, LEHRI MANSION, DUNCAN ROAD, NEAR AKRAM NIRBAN'S BISMILLAH CASTLE, MUMBAI 400008.</p>
+                        </div>
+
+                        <div class="col-md-12">
+                            <h1 class="text-white text-center text-lg-left address-logo"><span><i class="fa-solid fa-envelope"></i></span>Email:</h1>
+                            <p class="text-center text-lg-left" style="color: white; font-size: 20px;">contact@gmail.com</p>
+                        </div>
+
+                        <div class="col-md-12">
+                            <h1 class="text-white text-center text-lg-left address-logo"><span><i class="fa-solid fa-phone"></i></span>Contact Number:</h1>
+                            <p class="text-center text-lg-left" style="color: white; font-size: 20px;">8433605511 / 8433615511</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
     </section>
+
+    
+    
+    
+ <!-- Content Section End -->
+
 </main>
 <footer>
     <!--? Footer Start-->
@@ -611,12 +557,12 @@
                                         <div class="main-menu main-menu2 text-center">
                                             <nav>
                                                 <ul>
-                                                    <li><a href="index.html">Home</a></li>
-                                                    <li><a href="about.html">About</a></li>
-                                                    <li><a href="courses.html">Courses</a></li>
-                                                    <li><a href="pricing.html">Pricing</a></li>
-                                                    <li><a href="gallery.html">Gallery</a></li>
-                                                    <li><a href="contact.html">Contact</a></li>
+                                                    <li><a href="/">Home</a></li>
+                                                    <li><a href="/">About</a></li>
+                                                    <li><a href="/">Courses</a></li>
+                                                    <li><a href="/">Pricing</a></li>
+                                                    <li><a href="/">Gallery</a></li>
+                                                    <li><a href="/">Contact</a></li>
                                                 </ul>
                                             </nav>
                                         </div>   

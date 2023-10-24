@@ -18,7 +18,7 @@ body {
 }
 
 .slide {
-    flex: 0 0 100%; /* Full-width for mobile */
+    flex: 0 0 200%; /* Full-width for mobile */
     padding: 0 10px;
     position: relative;
     overflow: hidden; /* Hide overflow for zoom effect */
@@ -65,5 +65,21 @@ img {
 @media (min-width: 768px) {
     .slide {
         flex: 0 0 33.33%; /* 3 images per row for tablets and larger screens */
+
+    }
+    
+}
+
+@media (min-width: 768px) {
+    .slide {
+        flex: 0 0 33.33%; /* 3 images per row for tablets and larger screens */
     }
 }
+
+/* Styles for screens with a width less than 768px */
+@media (max-width: 767px) {
+    .slide {
+        flex: 0 0 100%; /* 1 image per row for smaller screens, takes up full width */
+    }
+}
+

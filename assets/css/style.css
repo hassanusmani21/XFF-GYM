@@ -2927,7 +2927,7 @@ hr {
   text-transform: uppercase;
   color: #fff;
   -webkit-text-stroke: 1px #f6f7f8;
-  -webkit-text-fill-color: transparent;
+  /* -webkit-text-fill-color: transparent; */
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {

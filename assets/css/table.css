@@ -1,0 +1,9 @@
+.features-caption{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.single-features{
+    margin-top: 10px;
+}
