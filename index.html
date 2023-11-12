@@ -64,15 +64,79 @@
     .address-logo span {
         margin-right: 10px;
     }
-    .about {
-        display: block;font-weight: 700;
+    .gallary {
+        display: block;
+        font-weight: 700;
         text-transform: uppercase;
         color: #fff;
         margin-bottom: 25px;
         line-height: 1.2;
         margin-top: 0px;
-        font-style: normal;font-size: 58px;
+        font-style: normal;
+        font-size: 58px;
+        -webkit-text-stroke: 1px #f6f7f8;
+        font-family: Oswald, sans-serif;
     }
+
+    div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* @media screen and (min-width: 700px){
+    .section-tittle2 h2 {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .section-tittle2 h2 {
+        display: none;
+    }
+} */
+
 </style>
 
 <body class="black-bg">
@@ -156,6 +220,9 @@
         <!-- slider Area End-->
         <!--? About Area-1 Start -->
         <section class="about-area2 fix pb-padding pt-50 pb-80" id="about">
+                <div class="section-tittle">
+                    <h2>ABOUT US</h2>
+                </div>
             <div class="support-wrapper align-items-center">
                 <div class="right-content2">
                     <!-- img -->
@@ -167,7 +234,7 @@
                     <!-- section tittle -->
                     <div class="section-tittle2 mb-20 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
                         <div class="front-text">
-                            <h2 class="">About Us</h2>
+                            <!-- <h2 class="mobileView">About Us</h2> -->
                             <p>Welcome to XFF, where we are dedicated to helping individuals of all 
                                 fitness levels unleash their inner warrior. Our mission is to provide a safe and
                                  inclusive environment for our members to train and learn martial arts, while 
@@ -229,11 +296,12 @@
                         <div class="single-cat text-center mb-30 wow fadeInUp" data-wow-duration="1s"
                             data-wow-delay=".2s">
                             <div class="cat-icon">
-                                <img src="assets/img/gallery/team1.png" alt="">
-                            </div>
-                            <div class="cat-cap">
-                                <h5><a>Body Building</a></h5>
-                                <p>You’ll look at graphs and charts in Task One, how to approach the task</p>
+                                <img style="opacity: 0.4;" src="assets/img/gallery/team1.png" alt="">
+                                <div class="cat-cap" style="transition: .4s;
+                                z-index: 2;transform: translateY(-200%);position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);">
+                                    <h5><a>Body Building</a></h5>
+                                    <p>Don’t be scared to LIFT HEAVY! You won’t get huge and bulky, you’ll just get amazing.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -241,23 +309,25 @@
                         <div class="single-cat text-center mb-30 wow fadeInUp" data-wow-duration="1s"
                             data-wow-delay=".4s">
                             <div class="cat-icon">
-                                <img src="assets/img/gallery/team2.png" alt="">
-                            </div>
-                            <div class="cat-cap">
-                                <h5><a>Muscle Gain</a></h5>
-                                <p>You’ll look at graphs and charts in Task One, how to approach the task</p>
+                                <img style="opacity: 0.4;" src="assets/img/gallery/team2.png" alt="">
+                                <div class="cat-cap" style="transition: .4s;
+                                z-index: 2;transform: translateY(-200%);position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);">
+                                    <h5><a>CrossFit</a></h5>
+                                    <p>The real workout starts when you want to stop.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="single-cat text-center mb-30 wow fadeInUp" data-wow-duration="1s"
-                            data-wow-delay=".6s">
+                            data-wow-delay=".6s" style="text-align: center;">
                             <div class="cat-icon">
-                                <img src="assets/img/gallery/team3.png" alt="">
-                            </div>
-                            <div class="cat-cap">
-                                <h5><a>Weight Loss</a></h5>
-                                <p>You’ll look at graphs and charts in Task One, how to approach the task</p>
+                                <img style="opacity: 0.4;" src="assets/img/gallery/team3.png" alt="">
+                                <div class="cat-cap" style="transition: .4s;
+                                z-index: 2;transform: translateY(-270%);position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);">
+                                    <h5><a>Cardio</a></h5>
+                                    <p>Go the extra mile. It’s never crowded.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -265,12 +335,12 @@
                         <div class="single-cat text-center mb-30 wow fadeInUp" data-wow-duration="1s"
                             data-wow-delay=".8s">
                             <div class="cat-icon">
-                                <img src="./assets/img/gallery2/Untitled design.png" alt="">
-                            </div>
-                            <div class="cat-cap">
-                                <h5><a>MMA</a></h5>
-                                <p>MMA blends various fighting forms in a combative sports competition.
-                                </p>
+                                <img style="opacity: 0.4;" src="./assets/img/gallery2/Untitled design.png" alt="">
+                                <div class="cat-cap" style="transition: .4s;
+                                z-index: 2;transform: translateY(-200%);position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);">
+                                    <h5><a>MMA</a></h5>
+                                    <p>Train with the energy of a warrior and soon you will have the heart of a warrior.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -344,8 +414,59 @@
             </div>
         </section>
         <!-- Trainer Section End -->
+        <div class="section-tittle">
+            <h2>GALLARY</h2>
+        </div>
+        <div class="responsive">
+            <div class="gallery">
+                <img src="./assets/img/gallery2/1.png" alt="Cinque Terre" width="600" height="400">
+            </div>
+          </div>
 
-        <div class="image-gallery" id="gallery">
+          <div class="responsive">
+            <div class="gallery">
+                <img src="./assets/img/gallery2/2.png" alt="Forest" width="600" height="400">
+            </div>
+          </div>
+          
+          <div class="responsive">
+            <div class="gallery">
+                <img src="./assets/img/gallery2/3.png" alt="Northern Lights" width="600" height="400">
+            </div>
+          </div>
+          
+          <div class="responsive">
+            <div class="gallery">
+                <img src="./assets/img/gallery2/4.png" alt="Mountains" width="600" height="400">
+            </div>
+          </div>
+
+          <div class="responsive">
+            <div class="gallery">
+                <img src="./assets/img/gallery2/5.png" alt="Mountains" width="600" height="400">
+            </div>
+          </div>
+
+          <div class="responsive">
+            <div class="gallery">
+                <img src="./assets/img/gallery2/6.png" alt="Mountains" width="600" height="400">
+            </div>
+          </div>
+
+          <div class="responsive">
+            <div class="gallery">
+                <img src="./assets/img/gallery2/7.png" alt="Mountains" width="600" height="400">
+            </div>
+          </div>
+
+          <div class="responsive">
+            <div class="gallery">
+                <img src="./assets/img/gallery2/9.png" alt="Mountains" width="600" height="400">
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          
+        <!-- <div class="image-gallery" id="gallery">
             <div class="row">
                 <div class="col-xl-12">
                     <div class="section-tittle text-center mb-55 wow fadeInUp" data-wow-duration="2s"
@@ -388,11 +509,11 @@
                         <img src="./assets/img/gallery2/10.png" alt="Image 4">
                     </div>
                     <!-- Add more images as needed -->
-                </div>
+                <!-- </div>
             </div>
             <button class="prev-btn"><i class="fa-solid fa-angle-left fa-2xl"></i></button>
-            <button class="next-btn"><i class="fa-solid fa-angle-right fa-2xl"></i></button>
-        </div>
+            <button class="next-btn"><i class="fa-solid fa-angle-right fa-2xl"></i></button> -->
+        <!-- </div> -->
 
         <!-- Gallery Area End -->
 
