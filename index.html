@@ -14,6 +14,7 @@
 
 
     <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/gijgo.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/slicknav.css">
@@ -24,230 +25,9 @@
     <link rel="stylesheet" href="assets/css/galary.css">
     <link rel="stylesheet" href="assets/css/about-section.css">
     <link rel="stylesheet" href="./assets/css/table.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="./assets/css/xff-css.css">
 </head>
-<style>
-    html {
-        scroll-behavior: smooth;
-    }
-
-    @media (max-width: 600px) {
-        .single-slider {
-            /* Reset the display style to stack content vertically */
-            /* display: block; */
-            display: flex;
-        }
-
-        .hero__caption {
-            /* Adjust text alignment for better centering */
-            text-align: left;
-            position: relative;
-            right: 40%;
-
-        }
-    }
-
-    .ul-heading {
-        font-size: 22px;
-        color: white;
-        background-color: red;
-        /* width: 100%; */
-        margin-bottom: 5px;
-    }
-
-
-    .ul-heading2 {
-        font-size: 22px;
-        color: white;
-        background-color: red;
-    }
-
-    .address-logo span {
-        margin-right: 10px;
-    }
-    .gallary {
-        display: block;
-        font-weight: 700;
-        text-transform: uppercase;
-        color: #fff;
-        margin-bottom: 25px;
-        line-height: 1.2;
-        margin-top: 0px;
-        font-style: normal;
-        font-size: 58px;
-        -webkit-text-stroke: 1px #f6f7f8;
-        font-family: Oswald, sans-serif;
-    }
-
-    div.gallery {
-  border: 1px solid #ccc;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.responsive {
-  padding: 0 6px;
-  float: left;
-  width: 24.99999%;
-}
-
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 100%;
-  }
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* @media screen and (min-width: 700px){
-    .section-tittle2 h2 {
-        display: block;
-    }
-}
-
-@media screen and (max-width: 700px){
-    .section-tittle2 h2 {
-        display: none;
-    }
-} */
-
-/* The Modal (background) */
-.modal {
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: black;
-}
-
-/* Modal Content */
-.modal-content {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  width: 90%;
-  max-width: 1200px;
-}
-
-/* The Close Button */
-.close {
-  color: white;
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #999;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.cursor {
-  cursor: pointer;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-/* .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-img {
-  margin-bottom: -4px;
-} */
-
-/* .caption-container {
-  text-align: center;
-  background-color: black;
-  padding: 2px 16px;
-  color: white;
-} */
-
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
-
-img.hover-shadow {
-  transition: 0.3s;
-}
-
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-</style>
 
 <body class="black-bg">
     <!-- ? Preloader Start -->
@@ -309,7 +89,7 @@ img.hover-shadow {
                     <div class="container" style="padding-right: 0px; padding-left: 0px;">
                         <div class="row">
                             <div>
-                                <div class="hero__caption";">
+                                <div class="hero__caption" ;">
                                     <span data-animation="fadeInLeft" data-delay="0.1s">Hi This is XFF</span>
                                     <h1 data-animation="fadeInLeft" data-delay="0.4s">Gym And Mixed Martial Arts</h1>
                                     <!-- <a href="courses.html" class="border-btn hero-btn" data-animation="fadeInLeft" data-delay="0.8s">My Courses</a> -->
@@ -321,18 +101,12 @@ img.hover-shadow {
             </div>
         </div>
         <!-- <div class="slideshow-container">
-        <ul class="slides">
-            <li><img src="./assets/img/gallery2/about-gym(logo) (10).jpeg" alt="Slide 1"></li>
-            <li><img src="slide2.jpg" alt="Slide 2"></li>
-            <li><img src="slide3.jpg" alt="Slide 3"></li>
-        </ul>
-    </div> -->
-        <!-- slider Area End-->
+            
         <!--? About Area-1 Start -->
         <section class="about-area2 fix pb-padding pt-50 pb-80" id="about">
-                <div class="section-tittle">
-                    <h2>ABOUT US</h2>
-                </div>
+            <div class="section-tittle">
+                <h2>ABOUT US</h2>
+            </div>
             <div class="support-wrapper align-items-center">
                 <div class="right-content2">
                     <!-- img -->
@@ -345,14 +119,14 @@ img.hover-shadow {
                     <div class="section-tittle2 mb-20 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
                         <div class="front-text">
                             <!-- <h2 class="mobileView">About Us</h2> -->
-                            <p>Welcome to XFF, where we are dedicated to helping individuals of all 
+                            <p>Welcome to XFF, where we are dedicated to helping individuals of all
                                 fitness levels unleash their inner warrior. Our mission is to provide a safe and
-                                 inclusive environment for our members to train and learn martial arts, while 
-                                 also achieving their fitness goals.</p>
-                            <p class="mb-40">At XFF, we pride ourselves on the expertise 
-                                and credentials of our trainers, coaches, and staff. Our team consists 
-                                of highly qualified professionals who hold certifications in various martial 
-                                arts disciplines and have extensive experience in fitness training. They are 
+                                inclusive environment for our members to train and learn martial arts, while
+                                also achieving their fitness goals.</p>
+                            <p class="mb-40">At XFF, we pride ourselves on the expertise
+                                and credentials of our trainers, coaches, and staff. Our team consists
+                                of highly qualified professionals who hold certifications in various martial
+                                arts disciplines and have extensive experience in fitness training. They are
                                 dedicated to helping you reach your full potential and guiding you towards success.</p>
                             <!-- <a href="courses.html" class="border-btn">My Courses</a> -->
                         </div>
@@ -371,17 +145,17 @@ img.hover-shadow {
                     <!-- section tittle -->
                     <div class="section-tittle2 mb-20 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
                         <div class="front-text">
-                            <p>We offer a wide range of 
-                                training programs and classes to cater to individuals of all skill levels. 
+                            <p>We offer a wide range of
+                                training programs and classes to cater to individuals of all skill levels.
                                 Whether you are a beginner looking to learn the basics or an advanced practitioner
-                                 seeking to refine your techniques, our gym has something for everyone. 
-                                 From Brazilian Jiu-Jitsu and Muay Thai to boxing and wrestling, you will 
-                                 find a discipline that suits your interests and goals.</p>
-                            <p class="mb-40">Our state-of-the-art facilities and 
-                                equipment are designed to enhance your training experience. 
-                                With specialized training areas like our boxing ring, grappling mats, 
-                                and strength and conditioning zones, you will have everything you need to push your 
-                                limits and achieve peak performance. We take great pride in maintaining a clean and 
+                                seeking to refine your techniques, our gym has something for everyone.
+                                From Brazilian Jiu-Jitsu and Muay Thai to boxing and wrestling, you will
+                                find a discipline that suits your interests and goals.</p>
+                            <p class="mb-40">Our state-of-the-art facilities and
+                                equipment are designed to enhance your training experience.
+                                With specialized training areas like our boxing ring, grappling mats,
+                                and strength and conditioning zones, you will have everything you need to push your
+                                limits and achieve peak performance. We take great pride in maintaining a clean and
                                 well-maintained training environment to ensure your safety and comfort.</p>
                             <!-- <a href="courses.html" class="border-btn">My Courses</a> -->
                         </div>
@@ -407,10 +181,12 @@ img.hover-shadow {
                             data-wow-delay=".2s">
                             <div class="cat-icon">
                                 <img style="opacity: 0.4;" src="assets/img/gallery/team1.png" alt="">
-                                <div class="cat-cap" style="transition: .4s;
+                                <div class="cat-cap"
+                                    style="transition: .4s;
                                 z-index: 2;transform: translateY(-200%);position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);">
                                     <h5><a>Body Building</a></h5>
-                                    <p>Don’t be scared to LIFT HEAVY! You won’t get huge and bulky, you’ll just get amazing.</p>
+                                    <p>Don’t be scared to LIFT HEAVY! You won’t get huge and bulky, you’ll just get
+                                        amazing.</p>
                                 </div>
                             </div>
                         </div>
@@ -420,7 +196,8 @@ img.hover-shadow {
                             data-wow-delay=".4s">
                             <div class="cat-icon">
                                 <img style="opacity: 0.4;" src="assets/img/gallery/team2.png" alt="">
-                                <div class="cat-cap" style="transition: .4s;
+                                <div class="cat-cap"
+                                    style="transition: .4s;
                                 z-index: 2;transform: translateY(-200%);position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);">
                                     <h5><a>CrossFit</a></h5>
                                     <p>The real workout starts when you want to stop.</p>
@@ -433,7 +210,8 @@ img.hover-shadow {
                             data-wow-delay=".6s" style="text-align: center;">
                             <div class="cat-icon">
                                 <img style="opacity: 0.4;" src="assets/img/gallery/team3.png" alt="">
-                                <div class="cat-cap" style="transition: .4s;
+                                <div class="cat-cap"
+                                    style="transition: .4s;
                                 z-index: 2;transform: translateY(-270%);position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);">
                                     <h5><a>Cardio</a></h5>
                                     <p>Go the extra mile. It’s never crowded.</p>
@@ -446,10 +224,12 @@ img.hover-shadow {
                             data-wow-delay=".8s">
                             <div class="cat-icon">
                                 <img style="opacity: 0.4;" src="./assets/img/gallery2/Untitled design.png" alt="">
-                                <div class="cat-cap" style="transition: .4s;
+                                <div class="cat-cap"
+                                    style="transition: .4s;
                                 z-index: 2;transform: translateY(-200%);position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);">
                                     <h5><a>MMA</a></h5>
-                                    <p>Train with the energy of a warrior and soon you will have the heart of a warrior.</p>
+                                    <p>Train with the energy of a warrior and soon you will have the heart of a warrior.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -460,7 +240,7 @@ img.hover-shadow {
         <!-- What we Offer End -->
 
         <!-- Trainer Section Start -->
-        <section class="team-area fix" id="trainer">
+        <!-- <section class="team-area fix" id="trainer">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
@@ -479,11 +259,11 @@ img.hover-shadow {
                             </div>
                             <div class="cat-cap">
                                 <h5><a>Sharukh</a></h5>
-                                <!-- <p>You’ll look at graphs and charts in Task One, how to approach the task</p> -->
+                                <p>You’ll look at graphs and charts in Task One, how to approach the task</p>
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="col-lg-3 col-md-6">
+                   <div class="col-lg-3 col-md-6">
                         <div class="single-cat text-center mb-30 wow fadeInUp" data-wow-duration="1s"
                             data-wow-delay=".4s">
                             <div class="cat-icon">
@@ -495,7 +275,7 @@ img.hover-shadow {
                             </div>
                         </div>
                     </div> -->
-                    <div class="col-lg-3 col-md-6">
+        <!--<div class="col-lg-3 col-md-6">
                         <div class="single-cat text-center mb-30 wow fadeInUp" data-wow-duration="1s"
                             data-wow-delay=".6s">
                             <div class="cat-icon">
@@ -504,7 +284,7 @@ img.hover-shadow {
                             <div class="cat-cap">
                                 <h5><a>Amir</a></h5>
                                 <!-- <p>You’ll look at graphs and charts in Task One, how to approach the task</p> -->
-                            </div>
+        <!--</div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
@@ -516,114 +296,73 @@ img.hover-shadow {
                             <div class="cat-cap">
                                 <h5><a>Sohel</a></h5>
                                 <!-- <p>MMA blends various fighting forms in a combative sports competition. -->
-                                </p>
+        <!--  </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- Trainer Section End -->
-        <div class="section-tittle">
+        <div class="section-tittle" id="gallery">
             <h2>GALLARY</h2>
         </div>
         <div class="responsive">
             <div class="gallery">
-                <img src="./assets/img/gallery2/1.png" onclick="openModal();currentSlide(0)" class="columnimg hover-shadow cursor" width="600" height="400">
+                <img src="./assets/img/gallery2/1.png" onclick="openModal();currentSlide(0)"
+                    class="columnimg hover-shadow cursor" width="600" height="400">
             </div>
-          </div>
+        </div>
 
-          <div class="responsive">
+        <div class="responsive">
             <div class="gallery">
-                <img src="./assets/img/gallery2/2.png" onclick="openModal();currentSlide(1)" class="columnimg hover-shadow cursor" width="600" height="400">
+                <img src="./assets/img/gallery2/2.png" onclick="openModal();currentSlide(1)"
+                    class="columnimg hover-shadow cursor" width="600" height="400">
             </div>
-          </div>
-          
-          <div class="responsive">
+        </div>
+
+        <div class="responsive">
             <div class="gallery">
-                <img src="./assets/img/gallery2/3.png" onclick="openModal();currentSlide(2)" class="columnimg hover-shadow cursor" width="600" height="400">
+                <img src="./assets/img/gallery2/3.png" onclick="openModal();currentSlide(2)"
+                    class="columnimg hover-shadow cursor" width="600" height="400">
             </div>
-          </div>
-          
-          <div class="responsive">
+        </div>
+
+        <div class="responsive">
             <div class="gallery">
-                <img src="./assets/img/gallery2/4.png" onclick="openModal();currentSlide(3)" class="columnimg hover-shadow cursor" width="600" height="400">
+                <img src="./assets/img/gallery2/4.png" onclick="openModal();currentSlide(3)"
+                    class="columnimg hover-shadow cursor" width="600" height="400">
             </div>
-          </div>
+        </div>
 
-          <div class="responsive">
+        <div class="responsive">
             <div class="gallery">
-                <img src="./assets/img/gallery2/5.png" onclick="openModal();currentSlide(4)" class="columnimg hover-shadow cursor" width="600" height="400">
+                <img src="./assets/img/gallery2/5.png" onclick="openModal();currentSlide(4)"
+                    class="columnimg hover-shadow cursor" width="600" height="400">
             </div>
-          </div>
+        </div>
 
-          <div class="responsive">
+        <div class="responsive">
             <div class="gallery">
-                <img src="./assets/img/gallery2/6.png" onclick="openModal();currentSlide(5)" class="columnimg hover-shadow cursor" width="600" height="400">
+                <img src="./assets/img/gallery2/6.png" onclick="openModal();currentSlide(5)"
+                    class="columnimg hover-shadow cursor" width="600" height="400">
             </div>
-          </div>
+        </div>
 
-          <div class="responsive">
+        <div class="responsive">
             <div class="gallery">
-                <img src="./assets/img/gallery2/7.png" onclick="openModal();currentSlide(6)" class="columnimg hover-shadow cursor" width="600" height="400">
+                <img src="./assets/img/gallery2/7.png" onclick="openModal();currentSlide(6)"
+                    class="columnimg hover-shadow cursor" width="600" height="400">
             </div>
-          </div>
+        </div>
 
-          <div class="responsive">
+        <div class="responsive">
             <div class="gallery">
-                <img src="./assets/img/gallery2/9.png" onclick="openModal();currentSlide(7)" class="columnimg hover-shadow cursor" width="600" height="400">
+                <img src="./assets/img/gallery2/9.png" onclick="openModal();currentSlide(7)"
+                    class="columnimg hover-shadow cursor" width="600" height="400">
             </div>
-          </div>
-          <div class="clearfix"></div>
-          
-        <!-- <div class="image-gallery" id="gallery">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="section-tittle text-center mb-55 wow fadeInUp" data-wow-duration="2s"
-                        data-wow-delay=".1s">
-                        <h2>GALARY</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="slider">
-                <div class="slides">
-                    <div class="slide">
-                        <img src="./assets/img/gallery2/1.png" alt="Image 1">
-                    </div>
-                    <div class="slide">
-                        <img src="./assets/img/gallery2/2.png" alt="Image 2">
-                    </div>
-                    <div class="slide">
-                        <img src="./assets/img/gallery2/3.png" alt="Image 3">
-                    </div>
-                    <div class="slide">
-                        <img src="./assets/img/gallery2/4.png" alt="Image 4">
-                    </div>
-                    <div class="slide">
-                        <img src="./assets/img/gallery2/5.png" alt="Image 4">
-                    </div>
-
-                    <div class="slide">
-                        <img src="./assets/img/gallery2/6.png" alt="Image 4">
-                    </div>
-
-                    <div class="slide">
-                        <img src="./assets/img/gallery2/7.png" alt="Image 4">
-                    </div>
-
-                    <div class="slide">
-                        <img src="./assets/img/gallery2/9.png" alt="Image 4">
-                    </div>
-
-                    <div class="slide">
-                        <img src="./assets/img/gallery2/10.png" alt="Image 4">
-                    </div>
-                    <!-- Add more images as needed -->
-                <!-- </div>
-            </div>
-            <button class="prev-btn"><i class="fa-solid fa-angle-left fa-2xl"></i></button>
-            <button class="next-btn"><i class="fa-solid fa-angle-right fa-2xl"></i></button> -->
-        <!-- </div> -->
+        </div>
+        <div class="clearfix"></div>
 
         <!-- Gallery Area End -->
 
@@ -731,11 +470,6 @@ img.hover-shadow {
             </div>
         </section>
 
-
-
-
-
-
         <!--? video_start -->
         <div class="video-area section-bg2 d-flex align-items-center" data-background="assets/img/gallery/video-bg.png">
             <div class="container">
@@ -767,21 +501,24 @@ img.hover-shadow {
                         <div class="row">
                             <div class="col-md-12" style="text-align: left!important;">
                                 <h4 class="text-white text-lg-left address-logo" style="padding-top: 10%;"><span><i
-                                            class="fa-solid fa-location-dot" style="color:#ff0000;"></i></span>Address:</h4>
-                                <p class="text-lg-left" style="color: white; padding-left: 10%;">XFF GYM, DUNCAN ROAD, NEAR BISMILLAH CASTLE, MUMBAI 400008.</p>
+                                            class="fa-solid fa-location-dot" style="color:#ff0000;"></i></span>Address:
+                                </h4>
+                                <p class="text-lg-left" style="color: white; padding-left: 10%;">XFF GYM, DUNCAN ROAD,
+                                    NEAR BISMILLAH CASTLE, MUMBAI 400008.</p>
                             </div>
 
                             <div class="col-md-12" style="text-align: left!important;">
-                                <h4 class="text-white text-lg-left address-logo"><span><i
-                                            class="fa-solid fa-envelope" style="color:#ff0000;"></i></span>Email:</h4>
+                                <h4 class="text-white text-lg-left address-logo"><span><i class="fa-solid fa-envelope"
+                                            style="color:#ff0000;"></i></span>Email:</h4>
                                 <p class="text-lg-left" style="color: white; font-size: 20px; padding-left: 10%;">
                                     contact@gmail.com</p>
                             </div>
 
                             <div class="col-md-12" style="text-align: left!important;">
-                                <h4 class="text-white text-lg-left address-logo"><span><i
-                                            class="fa-solid fa-phone" style="color:#ff0000;"></i></span>Contact Number:</h4>
-                                <p class="text-lg-left" style="color: white; font-size: 20px; padding-left: 10%;">8433605511 /
+                                <h4 class="text-white text-lg-left address-logo"><span><i class="fa-solid fa-phone"
+                                            style="color:#ff0000;"></i></span>Contact Number:</h4>
+                                <p class="text-lg-left" style="color: white; font-size: 20px; padding-left: 10%;">
+                                    8433605511 /
                                     8433615511</p>
                             </div>
                         </div>
@@ -790,11 +527,7 @@ img.hover-shadow {
             </div>
         </section>
 
-
-
-
         <!-- Content Section End -->
-
     </main>
     <footer>
         <!--? Footer Start-->
@@ -805,12 +538,6 @@ img.hover-shadow {
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="single-footer-caption mb-50 text-center">
-                                <!-- logo -->
-                                <!-- <div class="footer-logo wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
-                                <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
-                            </div> -->
-                                <!-- Menu -->
-                                <!-- Header Start -->
                                 <div class="header-area main-header2 wow fadeInUp" data-wow-duration="2s"
                                     data-wow-delay=".4s">
                                     <div class="main-header main-header2">
@@ -831,36 +558,33 @@ img.hover-shadow {
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Header End -->
-                                <!-- social -->
-                                <!-- <div class="footer-social mt-30 wow fadeInUp" data-wow-duration="3s" data-wow-delay=".8s">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="https://bit.ly/sai4ull"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                            </div> -->
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="footer-bottom">
-                <div class="row d-flex align-items-center">
-                    <div class="col-lg-12">
-                        <div class="footer-copy-right text-center"> -->
-                <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved with Xtreme Fight Force | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                </p>
+                    <div class="row d-flex align-items-center">
+                        <div class="col-lg-12">
+                            <div class="footer-copy-right text-center"> -->
+                                <p>Copyright &copy;
+                                    <script>document.write(new Date().getFullYear());</script> All rights reserved with
+                                    Xtreme Fight Force | This template is made with <i class="fa fa-heart"
+                                        aria-hidden="true"></i> by <a href="https://colorlib.com"
+                                        target="_blank">Colorlib</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div> 
-                <!-- Footer End-->
+            </div>
+        </div>
+        <!-- Footer End-->
     </footer>
     <!-- Scroll Up -->
     <div id="back-top">
         <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
     </div>
-    <div id="myModal" class="modal">
+    <!-- <div id="myModal" class="modal">
         <span class="close cursor" onclick="closeModal()">&times;</span>
         <div class="modal-content">
           <div class="mySlides">
@@ -868,100 +592,28 @@ img.hover-shadow {
           </div>
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
           <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
+        </div> -->
     <!-- JS here -->
-
 
     <!-- Jquery, Popper, Bootstrap -->
     <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
     <script src="./assets/js/popper.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
-
     <!-- Jquery Mobile Menu -->
     <script src="./assets/js/jquery.slicknav.min.js"></script>
 
     <!-- Jquery Slick , Owl-Carousel Plugins -->
     <script src="./assets/js/owl.carousel.min.js"></script>
     <script src="./assets/js/slick.min.js"></script>
-
     <!-- One Page, Animated-HeadLin -->
     <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/jquery.magnific-popup.js"></script>
+    <script src="./assets/js/jquery.ajaxchimp.min.js"></script>   
 
     <!-- Jquery Plugins, main Jquery -->
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/main.js"></script>
 
 </body>
-
-<script>
-    // document.addEventListener("DOMContentLoaded", function () {
-    //     const slider = document.querySelector(".slider");
-    //     const slides = document.querySelector(".slides");
-    //     const slideItems = document.querySelectorAll(".slide");
-    //     const prevBtn = document.querySelector(".prev-btn");
-    //     const nextBtn = document.querySelector(".next-btn");
-    //     let currentIndex = 0;
-
-    //     function showSlide(index) {
-    //         const offset = -index * slideItems[0].offsetWidth;
-    //         slides.style.transform = `translateX(${offset}px)`;
-    //     }
-
-    //     function goToNextSlide() {
-    //         currentIndex++;
-    //         if (currentIndex >= slideItems.length) {
-    //             currentIndex = 0;
-    //         }
-    //         showSlide(currentIndex);
-    //     }
-
-    //     function goToPrevSlide() {
-    //         currentIndex--;
-    //         if (currentIndex < 0) {
-    //             currentIndex = slideItems.length - 1;
-    //         }
-    //         showSlide(currentIndex);
-    //     }
-
-    //     nextBtn.addEventListener("click", goToNextSlide);
-    //     prevBtn.addEventListener("click", goToPrevSlide);
-    // });
-
-    function hideList() {
-        $('ul#navigation').slicknav('close');
-        }
-
-function openModal() {
-  document.getElementById("myModal").style.display = "block";
-  document.getElementById("header").style.display = "none";
-  document.getElementById("main").style.display = "none";
-}
-
-function closeModal() {
-  document.getElementById("myModal").style.display = "none";
-  document.getElementById("header").style.display = "block";
-  document.getElementById("main").style.display = "block";
-}
-
-var slideIndex = 0;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.querySelectorAll('.columnimg');
-  var modalImg = document.querySelector('.modal-content img');
-  n %= slides.length;
-  modalImg.src = slides[n].src;
-  captionText.innerHTML = n + 1 + ' / ' + slides.length;
-}
-</script>
 
 </html>
