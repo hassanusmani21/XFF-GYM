@@ -4118,7 +4118,6 @@ hr {
 @media (min-width: 1200px) and (max-width: 1500px) {
   /* line 11, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_about.scss */
   .about-area2 .support-wrapper .left-content2 {
-    width: 35%;
     padding-left: 60px;
   }
 }
@@ -4134,7 +4133,7 @@ hr {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   /* line 11, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_about.scss */
   .about-area2 .support-wrapper .left-content2 {
-    width: 60%;
+    width: 100%;
     padding-left: 60px;
     padding-right: 60px;
     padding-top: 50px;
@@ -4144,7 +4143,7 @@ hr {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   /* line 11, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_about.scss */
   .about-area2 .support-wrapper .left-content2 {
-    width: 82%;
+    width: 100%;
     padding-left: 50px;
     padding-right: 60px;
     padding-top: 50px;
@@ -4156,7 +4155,7 @@ hr {
   .about-area2 .support-wrapper .left-content2 {
     width: 100%;
     padding-left: 30px;
-    padding-right: 60px;
+    padding-right: 30px;
     padding-top: 50px;
   }
 }
@@ -4166,7 +4165,7 @@ hr {
   .about-area2 .support-wrapper .left-content2 {
     width: 100%;
     padding-left: 30px;
-    padding-right: 60px;
+    padding-right: 30px;
     padding-top: 50px;
   }
 }
