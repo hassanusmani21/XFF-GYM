@@ -36,6 +36,7 @@ html {
 .address-logo span {
     margin-right: 10px;
 }
+
 .gallary {
     display: block;
     font-weight: 700;
@@ -51,50 +52,50 @@ html {
 }
 
 div.gallery {
-border: 1px solid #ccc;
+    border: 1px solid #ccc;
 }
 
 div.gallery:hover {
-border: 1px solid #777;
+    border: 1px solid #777;
 }
 
 div.gallery img {
-width: 100%;
-height: auto;
+    width: 100%;
+    height: auto;
 }
 
 div.desc {
-padding: 15px;
-text-align: center;
+    padding: 15px;
+    text-align: center;
 }
 
 * {
-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .responsive {
-padding: 0 6px;
-float: left;
-width: 24.99999%;
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
 }
 
 @media only screen and (max-width: 700px) {
-.responsive {
-width: 49.99999%;
-margin: 6px 0;
-}
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
 }
 
 @media only screen and (max-width: 500px) {
-.responsive {
-width: 100%;
-}
+    .responsive {
+        width: 100%;
+    }
 }
 
 .clearfix:after {
-content: "";
-display: table;
-clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /* @media screen and (min-width: 700px){
@@ -111,106 +112,132 @@ clear: both;
 
 /* The Modal (background) */
 .modal {
-position: fixed;
-z-index: 1;
-padding-top: 100px;
-left: 0;
-top: 0;
-width: 100%;
-height: 100%;
-overflow: auto;
-background-color: black;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
 }
 
 /* Modal Content */
 .modal-content {
-position: relative;
-background-color: #fefefe;
-margin: auto;
-padding: 0;
-width: 90%;
-max-width: 1200px;
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
 }
 
 /* The Close Button */
 .close {
-color: white;
-position: absolute;
-top: 10px;
-right: 25px;
-font-size: 35px;
-font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-color: #999;
-text-decoration: none;
-cursor: pointer;
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .cursor {
-cursor: pointer;
+    cursor: pointer;
 }
 
 /* Next & previous buttons */
 .prev,
 .next {
-cursor: pointer;
-position: absolute;
-top: 50%;
-width: auto;
-padding: 16px;
-margin-top: -50px;
-color: white;
-font-weight: bold;
-font-size: 20px;
-transition: 0.6s ease;
-border-radius: 0 3px 3px 0;
-user-select: none;
--webkit-user-select: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 /* Position the "next button" to the right */
 .next {
-right: 0;
-border-radius: 3px 0 0 3px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 
 .demo {
-opacity: 0.6;
+    opacity: 0.6;
 }
 
 .active,
 .demo:hover {
-opacity: 1;
+    opacity: 1;
 }
 
 img.hover-shadow {
-transition: 0.3s;
+    transition: 0.3s;
 }
 
 .hover-shadow:hover {
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.follow{
-    display: block;
-}
-@media only screen and (min-width: 1200px) and (max-width: 1600px)  {
-    .follow{
-        display: none;
-    } 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px){
-    .follow{
+.follow {
+    display: block;
+}
+
+#showForNonDeskTop {
+    display: none;
+}
+
+#showForDeskTop {
+    display: block;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+    .follow {
         display: none;
-    } 
+    }
+
+    #showForNonDeskTop {
+        display: block;
+    }
+
+    #showForDeskTop {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .follow {
+        display: none;
+    }
+
+    #showForNonDeskTop {
+        display: block;
+    }
+
+    #showForDeskTop {
+        display: none;
+    }
 }
