@@ -32,3 +32,10 @@ function hideList() {
 //   modalImg.src = slides[n].src;
 //   captionText.innerHTML = n + 1 + ' / ' + slides.length;
 // }
+
+$(document).ready(function() {
+    //close menu on lost focus
+    $('.slicknav_menu').focusout(function(event){
+        $('ul#navigation').slicknav('close'); //Here 'menu' is the id of ul.
+    });  
+  });
